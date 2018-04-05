@@ -1,0 +1,29 @@
+.button {
+    text-transform: uppercase;
+    color: $white;
+    background-color: $blue;
+    border: none;
+    padding: 15px 25px;
+    font-family: $Roboto;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+    transition: box-shadow 2s ease;
+
+    &:hover {
+        box-shadow: inset #473b76 0px 0px 16px 4px;
+        transition: box-shadow 0.7s ease;
+    }
+}
+
+.button_dark {
+    background-color: #202528;
+    border: 1px solid #585c5e;
+    transition: border 0.6s ease;
+
+    &:hover {
+        box-shadow: 0px 0px 0px 0px;
+        border-color: $white;
+        transition: border 0.6s ease;
+    }
+}

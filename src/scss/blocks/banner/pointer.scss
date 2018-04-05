@@ -1,0 +1,25 @@
+.pointer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: (73px/2);
+}
+
+.pointer__img-ellipse {
+    width: 100%;
+}
+
+.pointer__img-pointer {
+    position: absolute;
+    width: (17px/2);
+}
+
+@include md-lg {
+    .pointer {
+        width: 57px;
+    }
+    
+    .pointer__img-pointer {
+        width: 13px;
+    }
+}

@@ -1,0 +1,40 @@
+.members {
+    text-align: center;
+}
+
+.members__title {
+    margin: 0;
+}
+
+.members__text {
+    font-family: $Roboto;
+    font-size: 12px;
+    color: $grey-p;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.member__board {
+    width: 112px;
+    height: 90px;
+    // margin: 0 12px;
+    background-color: $white;
+}
+
+.member__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.member__img {
+    width: 60%;
+}
+
+@include md-lg {
+    .members__text {
+        font-size: 14px;
+    }
+}

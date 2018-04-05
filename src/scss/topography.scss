@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: $DroidSerif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+h2 {
+    font-family: $Merriweather;
+    font-weight: 700;
+    font-size: 19px;
+    text-align: center;
+}
+
+h3 {
+    font-family: $Merriweather;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+@include md-lg {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}

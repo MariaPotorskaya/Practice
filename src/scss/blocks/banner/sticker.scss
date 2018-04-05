@@ -1,0 +1,53 @@
+.sticker {
+    width: 100%;
+    max-width: 300px;
+    min-height: 88px;
+    background-color: opacify($blue, 0.86);
+    padding: 10px 18px;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+}
+
+.sticker__title {
+    font-family: $Merriweather;
+    font-weight: 100;
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.sticker__text {
+    font-family: $Roboto;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.sticker__link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+@include md-lg {
+    .sticker {
+        max-width: 426px;
+        min-height: 135px;
+        padding: 30px 35px;
+    }
+
+    .sticker__title {
+        font-size: 19px;
+        margin-bottom: 12px;
+    }
+
+    .sticker__text {
+        line-height: 1.6;
+    }
+}

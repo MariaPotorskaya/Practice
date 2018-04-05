@@ -1,0 +1,105 @@
+.hamburger {
+    background: none;
+    position: relative;
+    padding: 0;
+    width: 19px;
+    height: 16px;
+    font-size: 0;
+    text-indent: -9999px;
+    border: 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.hamburger span {
+    display: block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: 2px;
+    background-color: $black;
+    transition: background 0s 0.3s;
+}
+
+.hamburger span::before,
+.hamburger span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $black;
+    content: "";
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.3s, 0s;
+}
+
+.hamburger span::before {
+    top: -6px;
+    transition-property: top, transform;
+}
+
+.hamburger span::after {
+    bottom: -6px;
+    transition-property: bottom, transform;
+}
+
+.is-active span {
+    background: none;
+}
+
+.is-active span::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+   
+.is-active span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+.is-active span::before,
+.is-active span::after {
+    transition-delay: 0s, 0.3s;
+}
+
+@include md {
+    .hamburger {
+        width: 30px;
+        height: 30px;
+    }
+
+    .hamburger span {
+        height: 3px;
+    }
+
+    .hamburger span::before {
+        top: -9px;
+    }
+    
+    .hamburger span::after {
+        bottom: -9px;
+    }
+
+    .hamburger span::before,
+    .hamburger span::after {
+        height: 3px;
+    }
+
+    .is-active span::before {
+        top: 0;
+    }
+
+    .is-active span::after {
+        bottom: 0px;
+    }
+}
+
+@include lg {
+    .hamburger {
+        display: none;
+    }
+}

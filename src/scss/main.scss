@@ -1,0 +1,39 @@
+@import 'mixins.scss';
+@import 'fonts.scss';
+@import 'topography.scss';
+@import 'colors.scss';
+
+@import 'blocks/banner/banner.scss';
+@import 'blocks/banner/pointer.scss';
+@import 'blocks/banner/sticker.scss';
+
+@import 'blocks/about/about.scss';
+@import 'blocks/about/group-img.scss';
+
+@import 'blocks/footer/copyright.scss';
+@import 'blocks/footer/fmenu.scss';
+@import 'blocks/footer/footer.scss';
+
+@import 'blocks/header/hamburger.scss';
+@import 'blocks/header/header.scss';
+@import 'blocks/header/hmenu.scss';
+@import 'blocks/header/icon__search.scss';
+@import 'blocks/header/logo.scss';
+@import 'blocks/header/search.scss';
+
+@import 'blocks/members/members.scss';
+@import 'blocks/members/slick.scss';
+
+@import 'blocks/other blocks/button.scss';
+@import 'blocks/other blocks/dash.scss';
+@import 'blocks/other blocks/wrap__map.scss';
+@import 'blocks/other blocks/container.scss';
+@import 'blocks/other blocks/wrapper__global.scss';
+@import 'blocks/other blocks/main.scss';
+@import 'blocks/other blocks/body__visible.scss';
+
+@import 'blocks/publications/book.scss';
+@import 'blocks/publications/books__lg.scss';
+@import 'blocks/publications/publications.scss';
+
+@import 'blocks/videos/videos.scss';

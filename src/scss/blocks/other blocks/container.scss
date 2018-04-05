@@ -1,0 +1,26 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    max-width: 580px;
+
+    box-sizing: border-box;
+}
+
+@include md {
+    .container {
+        max-width: 688px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@include lg {
+    .container {
+        max-width: 1140px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

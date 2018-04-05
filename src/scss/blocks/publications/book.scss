@@ -1,0 +1,120 @@
+.book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+    margin-bottom: 45px;
+}
+
+.book__content {
+    width: 50%;
+}
+
+.book__title {
+    font-family: $Merriweather;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.book__text {
+    font-family: $Roboto;
+    font-size: 12px;
+    color: $grey-p;
+    margin: 0;
+    margin-top: 14px;
+    line-height: 1.6;
+}
+
+.book__link {
+    text-decoration: none;
+    color: $blue;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.book__border {
+    width: 130px;
+    height: 146px;
+    border: 6px solid $white;
+    position: relative;
+    margin-right: 16px;
+}
+
+.book__img {
+    position: absolute;
+    width: 98px;
+    top: 16px;
+    left: 10px;
+    box-shadow: #948e92 13px 10px 25px 0px;
+}
+
+@include md-lg {
+    .book__title {
+        font-size: 18px;
+    }
+
+    .book__text {
+        font-size: 14px;
+    }
+}
+
+@include md {
+    .book {
+        margin-top: 90px;
+    }
+
+    .book__content {
+        min-width: 290px;
+    }
+
+    .book__border {
+        width: 266px;
+        height: 300px;
+        border: 12px solid $white;
+    }
+
+    .book__text {
+        margin-top: 24px;
+        line-height: 1.9;
+    }
+
+    .book__img {
+        width: 198px;
+        top: 35px;
+        left: 25px;
+    }
+}
+
+@include lg {
+    .book {
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    .book__content {
+        width: 296px;
+    }
+
+    .book__text {
+        margin-top: 22px;
+        line-height: 1.8;
+    }
+
+    .book__border {
+        width: 296px;
+        height: 338px;
+        border: 12px solid $white;
+        margin: 0;
+        margin-bottom: 105px;
+    }
+
+    .book__img {
+        width: 220px;
+        top: 40px;
+        left: 28px;
+    }
+}

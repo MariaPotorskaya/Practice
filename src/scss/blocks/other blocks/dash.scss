@@ -1,0 +1,28 @@
+.dash {
+    margin: 12px 0;
+    text-align: center;
+}
+
+.dash__img {
+    height: 3px;
+}
+
+@include md {
+    .dash {
+        margin: 18px 0;
+    }
+
+    .dash__img {
+        height: 4px;
+    }
+}
+
+@include lg {
+    .dash {
+        margin: 20px 0px;
+    }
+
+    .dash__img {
+        height: 4px;
+    }
+}

@@ -1,0 +1,40 @@
+.videos {
+    text-align: center;
+    background: url('../img/backgrounds/back-videos.png') no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+}
+
+.videos__title {
+    font-family: $Merriweather;
+    font-weight: 700;
+    font-size: 19px;
+    margin: 0;
+    color: $white;
+}
+
+.videos__text {
+    font-family: $Roboto;
+    font-size: 12px;
+    color: $grey-p;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #a5a5a7;
+}
+
+.videos__button {
+    text-align: center;
+    margin-top: 46px;
+    padding-bottom: 55px;
+}
+
+@include md-lg {
+    .videos__title {
+        font-size: 30px;
+    }
+
+    .videos__text {
+        font-size: 14px;
+    }
+}

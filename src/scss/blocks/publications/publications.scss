@@ -1,0 +1,47 @@
+.publications__title {
+    margin: 0;
+    padding-top: 26px;
+}
+
+.publications__text {
+    font-family: $Roboto;
+    font-size: 12px;
+    color: $grey-p;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+.publications__button {
+    text-align: center;
+    margin-top: 46px;
+    margin-bottom: 55px;
+}
+
+@include md-lg { 
+    .publications__text {
+        font-size: 14px;
+    }
+}
+
+@include md {
+    .publications__button {
+        margin: 102px 0;
+    }
+}
+
+@include lg {
+    .publications__title {
+        padding-top: 80px;
+    }
+
+    .publications__text {
+        max-width: 590px;
+        text-align: center;
+    }
+
+    .publications__button {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 134px;
+    }
+}

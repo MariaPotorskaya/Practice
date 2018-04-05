@@ -1,0 +1,74 @@
+.hmenu {
+    font-family: $Roboto;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.hmenu__item {
+    height: 47px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+}
+
+.hmenu__link {
+    color: $black;
+    display: inline-block;
+    padding: 17px 0px;
+    text-decoration: none;
+}
+
+.hmenu__angle {
+    display: inline-block;
+    border-left: 1px solid #e0e0e0;
+    padding: 14px;
+    height: 46px;
+    width: 50px;
+}
+
+@include md {
+    .hmenu {
+        font-size: 14px;
+    }  
+
+    .hmenu__item {
+        height: 70px;
+        padding-left: 40px;
+    }
+
+    .hmenu__angle {
+        padding: 26px 28px;
+        height: 18px;
+    }
+}
+
+@include lg {
+    .hmenu {
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+    } 
+
+    .hmenu__item {
+        text-align: center;
+        height: 14px;
+        border: none;
+        padding: 0;
+        margin-right: 16px;
+        // background-color: none;
+    }
+
+    .hmenu__link {
+        padding: 20px;
+    }
+
+    .hmenu__angle {
+        display: none;
+    }
+}

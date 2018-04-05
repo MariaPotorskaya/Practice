@@ -1,0 +1,41 @@
+.fmenu {
+    font-family: $Roboto;
+    font-size: 11px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 0;
+}
+
+.fmenu__item {
+    margin: 11px;
+    list-style: none;
+}
+
+.fmenu__link {
+    color: $white;
+    text-decoration: none;
+}
+
+@include md-lg {
+    .fmenu__link {
+        font-size: 12px;
+    }
+}
+
+@include lg {
+    .fmenu__link {
+        color: #939495;
+        transition: color 0.5s ease;
+
+        &:hover {
+            color: $white;
+            transition: color 0.5s ease;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.icon__search {
+    fill: $white;
+    height: 100%;
+    width: 100%;
+}
+
+@include lg {
+    .icon__search {
+        fill: $black;
+    }
+}

@@ -1,0 +1,38 @@
+.banner {
+    background: url('../img/backgrounds/back-banner.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 335px;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.banner__title {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.banner__text {
+    font-family: $Roboto;
+    font-size: 14px;
+    margin: 24px auto;
+    max-width: 650px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+@include md-lg {
+    .banner {
+        margin-top: 72px;
+        min-height: 500px;
+    }
+
+    .banner__text {
+        margin: 40px auto;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}

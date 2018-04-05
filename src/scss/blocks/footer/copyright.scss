@@ -1,0 +1,32 @@
+.copyright {
+    font-family: $Roboto;
+    font-size: 11px;
+    font-weight: 300;
+    color: $white;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-top: 1px solid #131618;
+    margin: 0;
+}
+
+@include md-lg {
+    .copyright {
+        font-size: 12px;
+    }
+}
+
+@include md {
+    .copyright {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+@include lg {
+    .copyright {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
