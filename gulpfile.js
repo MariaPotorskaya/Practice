@@ -68,6 +68,9 @@ gulp.task('js:build', function () {
     gulp.src('src/js/slick.js')
         .pipe(gulp.dest(path.build.js))
         .pipe(browserSync.reload({stream: true}));
+    gulp.src('src/js/youtube.js')
+        .pipe(gulp.dest(path.build.js))
+        .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('slick:build', function () {
