@@ -65,10 +65,18 @@ gulp.task('js:build', function () {
     gulp.src(path.src.js)
         .pipe(gulp.dest(path.build.js))
         .pipe(browserSync.reload({stream: true}));
+    gulp.src('src/js/slick.js')
+        .pipe(gulp.dest(path.build.js))
+        .pipe(browserSync.reload({stream: true}));
+});
+
+gulp.task('slick:build', function () {
+    gulp.src('node_modules/slick-carousel/slick/**/*.*')
+        .pipe(gulp.dest('build/slick'));
 });
 
 gulp.task('style:build', function () {
-    gulp.src(path.src.style)
+    gulp.src(['node_modules/normalize.css/normalize.css',path.src.style])
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(concat('style.css'))
@@ -78,8 +86,6 @@ gulp.task('style:build', function () {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.css))
         .pipe(browserSync.reload({stream: true}));
-    gulp.src('node_modules/normalize.css/normalize.css')
-        .pipe(gulp.dest(path.build.css))
 });
 
 gulp.task('image:build', function () {
@@ -91,11 +97,6 @@ gulp.task('image:build', function () {
 gulp.task('fonts:build', function() {
     gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts))
-});
-
-gulp.task('slick:build', function () {
-    gulp.src('node_modules/slick-carousel/slick/**/*.*')
-        .pipe(gulp.dest('build/slick'));
 });
 
 gulp.task('build', [

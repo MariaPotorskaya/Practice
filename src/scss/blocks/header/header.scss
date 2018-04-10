@@ -4,9 +4,11 @@
     width: 100%;
     z-index: 100;
     background-color: $white;
+    padding: 0px;
 }
 
 .header__top {
+    box-shadow: 0px 2px 5px 0px rgba(215, 225, 236, 0.65);
     padding-left: 15px;
     padding-right: 15px;
     background-color: $white;
@@ -28,7 +30,12 @@
 }
 
 @include md {
+    .header {
+        padding: 0;
+    }
+
     .header__top {
+        box-shadow: none;
         padding-left: 40px;
         padding-right: 40px;
         height: 74px;
@@ -46,9 +53,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        box-shadow: 0px 2px 5px 0px rgba(215, 225, 236, 0.65);
     }
 
     .header__top {
+        box-shadow: none;
         padding: 0px;
         background-color: $white;
         height: 40px;
@@ -59,5 +68,11 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1050px) {
+    .header {
+        padding: 0 25px;
     }
 }

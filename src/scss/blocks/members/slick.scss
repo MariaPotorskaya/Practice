@@ -1,6 +1,42 @@
-.slick__slider {
+.slick-slider {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 18px 0px;
+}
+
+.slick-prev {
+    left: -7px;
+}
+
+.slick-next {
+    right: -7px;
+}
+
+@include md {
+    .slick-slider {
+        padding: 55px 0px;
+    }
+
+    .slick-prev {
+        left: -20px;
+    }
+    
+    .slick-next {
+        right: -20px;
+    }
+}
+
+@include lg {
+    .slick-slider {
+        padding: 53px 0px;
+    }
+
+    .slick-prev {
+        left: -20px;
+    }
+    
+    .slick-next {
+        right: -20px;
+    }
 }

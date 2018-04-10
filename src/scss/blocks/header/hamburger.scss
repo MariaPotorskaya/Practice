@@ -48,17 +48,19 @@
 }
 
 .is-active span {
-    background: none;
+    background-color: $white;
 }
 
 .is-active span::before {
     top: 0;
     transform: rotate(45deg);
+    transition-property: top, transform;
 }
    
 .is-active span::after {
     bottom: 0;
     transform: rotate(-45deg);
+    transition-property: bottom, transform;
 }
 
 .is-active span::before,

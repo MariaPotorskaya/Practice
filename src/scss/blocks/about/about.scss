@@ -1,7 +1,14 @@
+.about {
+    background-color: $white;
+}
+
+.about__container {
+    padding: 32px 0px;
+}
+
 .about__title {
     color: $black;
     margin: 0;
-    margin-top: 32px;
     line-height: 1.6;
 }
 
@@ -16,23 +23,34 @@
 }
 
 .about__button {
-    margin-bottom: 15px;
+    margin-bottom: 24px;
 }
 
 @include md {
-    .about__title {
-        margin-top: 64px;
+    .about__container {
+        padding: 60px 0px 70px 0px;
     }
 
     .about__text {
         line-height: 2;
         margin-bottom: 32px;
     }
+
+    .about__button {
+        margin-bottom: 36px;
+    }
 }
 
 @include lg {
-    .about {
-        width: 420px;
+    .about__container {
+        padding: 112px 0px 82px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .about__content {
+        width: 36%;
     }
 
     .about__title {
@@ -44,13 +62,11 @@
         margin-bottom: 28px;
     }
 
-    .about__wrap-lg {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
     .about__dash {
         text-align: left;
+    }
+
+    .about__button {
+        margin-bottom: 0px;
     }
 }

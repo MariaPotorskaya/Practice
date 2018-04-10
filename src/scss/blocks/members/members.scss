@@ -1,5 +1,6 @@
 .members {
     text-align: center;
+    padding-bottom: 35px;
 }
 
 .members__title {
@@ -15,26 +16,52 @@
     line-height: 1.6;
 }
 
-.member__board {
-    width: 112px;
-    height: 90px;
-    // margin: 0 12px;
-    background-color: $white;
-}
-
-.member__link {
+.member {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
+    width: 110px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: #fff;
 }
 
 .member__img {
-    width: 60%;
+    height: 62px;
 }
 
 @include md-lg {
     .members__text {
         font-size: 14px;
+    }
+
+    .member {
+        width: 165px;
+        height: 140px;
+        margin: 25px auto;
+        background-color: #fff;
+
+        &:hover {
+            margin: 15px auto;
+            width: 170px;
+            height: 160px;
+            box-shadow: 0px 3px 18px 0px rgba(9, 69, 203, 0.2);
+        }
+    }
+
+    .member__img {
+        height: 84px;
+    }
+}
+
+@include md {
+    .members {
+        padding-bottom: 22px;
+    }
+}
+
+@include lg {
+    .members {
+        padding-bottom: 66px;
     }
 }

@@ -23,16 +23,27 @@ function toggleInput() {
   if (search__input.className === "search__input") {
     search__input.className += " search__input_open";
     search__cross.className += " search__cross_open";
+    search__input.focus();
   } else {
     search__input.className = "search__input";
-    search__cross.className = " search__cross";
+    search__cross.className = "search__cross";
   }
 }
 
 function clearInput() {
+    search_cross.focus();
     search__input.value = "";
+}
+
+function closeSearch() {
+    if (search__input == document.activeElement || search_cross == document.activeElement) {
+    } else {
+        search__input.className = "search__input";
+        search__cross.className = "search__cross";
+    }
 }
 
 hamburger.addEventListener("click", toggleNav);
 search__icon.addEventListener("click", toggleInput);
 search_cross.addEventListener("click", clearInput);
+body_visible.addEventListener("click", closeSearch);

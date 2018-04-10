@@ -11,6 +11,7 @@
 }
 
 .book__title {
+    text-align: left;
     font-family: $Merriweather;
     font-weight: 700;
     font-size: 14px;
@@ -49,7 +50,7 @@
     width: 98px;
     top: 16px;
     left: 10px;
-    box-shadow: #948e92 13px 10px 25px 0px;
+    box-shadow: #797277 8px 7px 14px 0px;;
 }
 
 @include md-lg {
@@ -116,5 +117,11 @@
         width: 220px;
         top: 40px;
         left: 28px;
+    }
+
+    .books__lg {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 }

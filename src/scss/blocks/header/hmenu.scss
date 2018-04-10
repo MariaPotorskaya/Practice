@@ -22,6 +22,10 @@
     display: inline-block;
     padding: 17px 0px;
     text-decoration: none;
+
+    &:hover {
+        color: $blue;
+    }
 }
 
 .hmenu__angle {
@@ -30,6 +34,10 @@
     padding: 14px;
     height: 46px;
     width: 50px;
+
+    &:hover {
+        background-color: #f5f5f2;
+    }
 }
 
 @include md {
@@ -43,8 +51,10 @@
     }
 
     .hmenu__angle {
-        padding: 26px 28px;
-        height: 18px;
+        height: 69px;
+        width: 72px;
+        box-sizing: border-box;
+        padding: 22px 14px;
     }
 }
 
@@ -61,11 +71,20 @@
         border: none;
         padding: 0;
         margin-right: 16px;
-        // background-color: none;
     }
 
     .hmenu__link {
-        padding: 20px;
+        padding: 28px 0px;
+        margin: 0px 20px;
+        border-bottom: none;
+        border-bottom: 2px solid $white;
+        transition: border-bottom 0.6s ease;
+
+        &:hover {
+            color: $black;
+            border-bottom: 2px solid $black;
+            transition: border-bottom 0.6s ease;
+        }
     }
 
     .hmenu__angle {

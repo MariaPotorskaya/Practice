@@ -14,6 +14,7 @@
 }
 
 .search__input {
+    font-family:  $Roboto;
     background-color: $black;
     border: none;
     padding: 0;
@@ -70,6 +71,7 @@
         top: 72px;
         right: 107px;
         width: 240px;
+        font-family:  $Roboto;
     }
 
     .search__cross_open {

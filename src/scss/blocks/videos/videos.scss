@@ -29,6 +29,16 @@
     padding-bottom: 55px;
 }
 
+.video {
+    width: 250px;
+    margin: auto;
+}
+
+.video__iframe {
+    width: 250px;
+    height: 140px;
+}
+
 @include md-lg {
     .videos__title {
         font-size: 30px;
@@ -36,5 +46,14 @@
 
     .videos__text {
         font-size: 14px;
+    }
+
+    .video {
+        width: 515px;
+    }
+    
+    .video__iframe {
+        width: 515px;
+        height: 299px;
     }
 }

@@ -3,27 +3,25 @@ $RobotoCondensed: 'Roboto Condensed';
 $Merriweather: 'Merriweather';
 $DroidSerif: 'Droiderif';
 
-$urlFonts:  '../fonts';
-
 @mixin font-face ($family, $urlFont, $weight, $style) {
   @font-face {
     font-family: $family;
-    src: url ('#{$urlFonts}/#{$urlFont}.woff2') format('woff2'),
-    url ('#{$urlFonts}/#{$urlFont}.woff') format('woff');
+    src: url('../fonts/#{$urlFont}.woff2') format('woff2'),
+         url('../fonts/#{$urlFont}.woff') format('woff');
     font-weight: $weight;
     font-style: $style;
   }
 }
 
 @include font-face (
-  $Roboto,
+  $Roboto, 
   'Roboto Light',
   300,
   normal
 );
 
 @include font-face (
-  $Roboto,
+  $Roboto, 
   'Roboto',
   400,
   normal
@@ -45,7 +43,7 @@ $urlFonts:  '../fonts';
 
 @include font-face (
   $RobotoCondensed,
-  'Roboto Condensed Bold',
+  'Roboto Condensed',
   700,
   normal
 );
