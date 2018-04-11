@@ -1,18 +1,16 @@
 .hamburger {
-    background: none;
+    display: inline-block;
     position: relative;
     padding: 0;
-    width: 19px;
-    height: 16px;
+    width: 30px;
+    height: 30px;
     font-size: 0;
     text-indent: -9999px;
-    border: 0;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.hamburger:focus {
+    box-shadow: none;
+    border: none;
     outline: none;
+    background: none;
+    cursor: pointer;
 }
 
 .hamburger span {
@@ -20,9 +18,9 @@
     position: absolute;
     left: 0px;
     right: 0px;
-    height: 2px;
+    height: 3px;
     background-color: $black;
-    transition: background 0s 0.3s;
+    transition: background 0.4s 0s;
 }
 
 .hamburger span::before,
@@ -30,73 +28,70 @@
     display: block;
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background-color: $black;
     content: "";
-    transition-duration: 0.3s, 0.3s;
-    transition-delay: 0.3s, 0s;
 }
 
 .hamburger span::before {
-    top: -6px;
-    transition-property: top, transform;
+    top: -8px;
+    transition: top 0.4s 0.4s cubic-bezier(0.23, 1, 0.32, 1), transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .hamburger span::after {
-    bottom: -6px;
-    transition-property: bottom, transform;
+    bottom: -8px;
+    transition: bottom 0.4s 0.4s cubic-bezier(0.23, 1, 0.32, 1), transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .is-active span {
     background-color: $white;
+    transition: background 0.4s 0s;
 }
 
 .is-active span::before {
     top: 0;
-    transform: rotate(45deg);
-    transition-property: top, transform;
+    transform: rotate(-45deg);
+    transition: top 0.4s cubic-bezier(0.23, 1, 0.32, 1), transform 0.4s 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
    
 .is-active span::after {
     bottom: 0;
-    transform: rotate(-45deg);
-    transition-property: bottom, transform;
-}
-
-.is-active span::before,
-.is-active span::after {
-    transition-delay: 0s, 0.3s;
+    transform: rotate(45deg);
+    transition: bottom 0.4s cubic-bezier(0.23, 1, 0.32, 1), transform 0.4s 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 @include md {
     .hamburger {
-        width: 30px;
+        width: 39px;
         height: 30px;
     }
 
     .hamburger span {
-        height: 3px;
+        height: 4px;
     }
 
     .hamburger span::before {
-        top: -9px;
+        top: -12px;
+        height: 4px;
+        transition: top 0.4s 0.4s cubic-bezier(0.23, 1, 0.32, 1), transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
     }
     
     .hamburger span::after {
-        bottom: -9px;
-    }
-
-    .hamburger span::before,
-    .hamburger span::after {
-        height: 3px;
+        bottom: -12px;
+        height: 4px;
+        transition: bottom 0.4s 0.4s cubic-bezier(0.23, 1, 0.32, 1), transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
     }
 
     .is-active span::before {
         top: 0;
+        transform: rotate(-45deg);
+        transition: top 0.4s cubic-bezier(0.23, 1, 0.32, 1), transform 0.4s 0.4s cubic-bezier(0.23, 1, 0.32, 1);
     }
-
+       
     .is-active span::after {
-        bottom: 0px;
+        bottom: 0;
+        transform: rotate(45deg);
+        transition: bottom 0.4s cubic-bezier(0.23, 1, 0.32, 1), transform 0.4s 0.4s cubic-bezier(0.23, 1, 0.32, 1);
     }
 }
 

@@ -75,3 +75,15 @@
         width: 42%;
     }  
 }
+
+@media screen and (min-width: 381px) and (max-width: 450px) {
+    .group-img {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .group-img {
+        height: 310px;
+    }
+}

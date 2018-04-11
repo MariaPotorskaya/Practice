@@ -1,3 +1,15 @@
+.video__iframe {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: solid rgba(0,0,0,.3);
+    border-width: 10vh 10vw;
+}
+
 .videos {
     text-align: center;
     background: url('../img/backgrounds/back-videos.png') no-repeat;
@@ -25,18 +37,36 @@
 
 .videos__button {
     text-align: center;
-    margin-top: 46px;
     padding-bottom: 55px;
 }
 
 .video {
     width: 250px;
     margin: auto;
+    position: relative;
 }
 
-.video__iframe {
+.video__img {
     width: 250px;
     height: 140px;
+}
+
+.video__play1 {
+    position: absolute;
+    cursor: pointer;
+    width: 52px; 
+    height: 37.5px;
+    top: (140px/2px - 37.5px/2);   
+    left: (250px/2px - 52px/2);
+}
+
+.video__play2 {
+    position: absolute;
+    cursor: pointer;
+    width: 14px; 
+    height: 14.5px;
+    top: (140px/2px - 14.5px/2);   
+    left: (250px/2px - 14px/2);
 }
 
 @include md-lg {
@@ -52,8 +82,22 @@
         width: 515px;
     }
     
-    .video__iframe {
+    .video__img {
         width: 515px;
         height: 299px;
+    }
+
+    .video__play1 {
+        width: 67px; 
+        height: 48px;
+        top: (299px/2px - 48px/2);   
+        left: (515px/2px - 67px/2);   
+    }
+
+    .video__play2 {
+        width: 18px; 
+        height: 19px;
+        top: (299px/2px - 19px/2);   
+        left: (515px/2px - 18px/2); 
     }
 }

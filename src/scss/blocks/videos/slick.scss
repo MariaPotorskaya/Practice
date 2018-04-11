@@ -1,13 +1,39 @@
-.slick-dots li.slick-active button:before {
-    opacity: 1;
-    color: $white;
+.slick-slider-video {
+    flex-direction: column;
+    margin: 56px 0px;
 }
 
-.slick-dots li button:before {
-    opacity: 1;
-    color: #585c5f;
+.slick-slider-video .slick-prev {
+    display: none !important;
 }
 
-.slick-slide {
-    width: 518px;
+.slick-slider-video .slick-next {
+    display: none !important;
+}
+
+.slick-slider-video .slick-dots {
+    margin: 35px 0px 0px 0px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slick-slider-video .slick-dots li {
+    list-style: none;
+}
+
+.slick-slider-video .slick-dots li button {
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    text-indent: -9999px;
+    background: url('../../../img/figures/dot-grey.svg') center no-repeat;
+    border: none;
+    transition: background 0.3s;
+
+    &:hover {
+        background: url('../../../img/figures/dot-white.svg') center no-repeat;
+        transition: background 0.3s;
+    }
 }
